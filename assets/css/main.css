@@ -2271,3 +2271,170 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+
+/* ------------------
+    My custom styles 
+   ------------------ */
+
+/* Skill card */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 25px;
+    border-radius: 12px;
+    background: #fff9eb;
+}
+
+@media (max-width: 700px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Project images */
+.project-image {
+    margin: 1.5em 0;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* Project introduction */
+#main .inner .project-intro > header.main {
+    margin-bottom: 0.6em !important;
+}
+
+#main .inner .project-intro h1 {
+    margin-bottom: 0.2em !important;
+}
+
+#main .inner .project-intro .project-details {
+    margin-bottom: 1.2em !important;
+}
+
+#main .inner .project-intro > header:not(.main) {
+    margin-bottom: 0.4em !important;
+}
+
+#main .inner .project-intro > header:not(.main) h2 {
+    margin-bottom: 0 !important;
+}
+
+#main .inner .project-intro > p {
+    margin-bottom: 0.8em !important;
+}
+
+#main .inner .project-intro .project-details {
+    margin-bottom: 2.2em !important;
+}
+
+/* Project sections */
+#main .inner .project-section > header.major {
+    margin-bottom: 1em !important;
+}
+
+#main .inner .project-section > header.major h2 {
+    margin-bottom: 0 !important;
+}
+
+#main .inner .project-section > header:not(.major) {
+    margin-bottom: 0.4em !important;
+}
+
+#main .inner .project-section h3 {
+    margin-bottom: 0 !important;
+}
+
+#main .inner .project-section p {
+    margin-bottom: 0.8em !important;
+}
+
+/* Project section separator */
+#main .inner .project-section {
+    margin-top: 1em !important;
+    padding-top: 1em !important;
+}
+
+/* Add more space between a paragraph and the following H3 */
+#main .inner .project-section p + header {
+    margin-top: 1.8em !important;
+}
+
+/* Profile image */
+#banner .profile-image {
+    width: 28%;
+    height: auto !important;
+    aspect-ratio: 1 / 1;
+    margin: 0 0 0 3em;
+    overflow: hidden;
+    border-radius: 50%;
+    align-self: center;
+}
+
+#banner .profile-image img {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 736px) {
+    #banner .profile-image {
+        width: 60% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        aspect-ratio: 1 / 1;
+        margin: 0 auto 2em auto !important;
+    }
+
+    #banner .profile-image img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+/* Smooth scroll to # */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Certificate */
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em 3em;
+}
+
+.certificate {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.certificate .icon {
+    flex-shrink: 0;
+    font-size: 2em;
+}
+
+.certificate h3 {
+    margin: 0;
+}
+
+/* Highlight text */
+.highlight {
+    color: #f56a6a;
+}
